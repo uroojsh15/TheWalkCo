@@ -1,0 +1,180 @@
+﻿@{
+    Layout = "~/Views/Shared/Admin/_AdminLayout.cshtml";
+    ViewData["Title"] = "Dashboard";
+}
+
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h1 class="h3 mb-1">Admin Dashboard</h1>
+        <p class="text-muted mb-0">Manage products, orders, and keep track of The Walk Co. performance.</p>
+    </div>
+    <div>
+        <a asp-controller="Product" asp-action="Create" class="btn btn-dark btn-sm">
+            <i class="bi bi-plus-circle me-1"></i> Add New Product
+        </a>
+        <a asp-controller="Admin" asp-action="Orders" class="btn btn-outline-secondary btn-sm ms-2">
+            <i class="bi bi-receipt-cutoff me-1"></i> View Orders
+        </a>
+    </div>
+</div>
+
+<!-- Stats cards -->
+<div class="row g-3 mb-4">
+    <div class="col-md-3 col-sm-6">
+        <div class="card shadow-sm border-0 h-100">
+            <div class="card-body d-flex align-items-center">
+                <div class="me-3">
+                    <span class="rounded-circle d-inline-flex align-items-center justify-content-center bg-light" style="width:42px;height:42px;">
+                        <i class="bi bi-box-seam"></i>
+                    </span>
+                </div>
+                <div>
+                    <p class="text-muted mb-1 small">Total Products</p>
+                    <h5 class="mb-0 fw-semibold">@ViewBag.TotalProducts ?? 0</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+        <div class="card shadow-sm border-0 h-100">
+            <div class="card-body d-flex align-items-center">
+                <div class="me-3">
+                    <span class="rounded-circle d-inline-flex align-items-center justify-content-center bg-light" style="width:42px;height:42px;">
+                        <i class="bi bi-bag-check"></i>
+                    </span>
+                </div>
+                <div>
+                    <p class="text-muted mb-1 small">Total Orders</p>
+                    <h5 class="mb-0 fw-semibold">@ViewBag.TotalOrders ?? 0</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+        <div class="card shadow-sm border-0 h-100">
+            <div class="card-body d-flex align-items-center">
+                <div class="me-3">
+                    <span class="rounded-circle d-inline-flex align-items-center justify-content-center bg-light" style="width:42px;height:42px;">
+                        <i class="bi bi-clock-history"></i>
+                    </span>
+                </div>
+                <div>
+                    <p class="text-muted mb-1 small">Pending Orders</p>
+                    <h5 class="mb-0 fw-semibold text-warning">@ViewBag.PendingOrders ?? 0</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+        <div class="card shadow-sm border-0 h-100">
+            <div class="card-body d-flex align-items-center">
+                <div class="me-3">
+                    <span class="rounded-circle d-inline-flex align-items-center justify-content-center bg-light" style="width:42px;height:42px;">
+                        <i class="bi bi-currency-dollar"></i>
+                    </span>
+                </div>
+                <div>
+                    <p class="text-muted mb-1 small">Today’s Revenue</p>
+                    <h5 class="mb-0 fw-semibold">@ViewBag.TodayRevenue ?? 0</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main content: recent orders + quick actions -->
+<div class="row g-4">
+    <!-- Recent Orders -->
+    <div class="col-lg-8">
+        <div class="card shadow-sm border-0 h-100">
+            <div class="card-header bg-white border-0 d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Recent Orders</h5>
+                <a asp-controller="Orders" asp-action="Index" class="small text-decoration-none">View all</a>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table mb-0 align-middle">
+                        <thead class="small text-muted">
+                            <tr>
+                                <th>Order #</th>
+                                <th>Customer</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th class="text-end">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (ViewBag.RecentOrders == null || ViewBag.RecentOrders.Count == 0)
+                            {
+                                <tr>
+                                    <td colspan="5" class="text-center text-muted py-4">
+                                        No recent orders yet.
+                                    </td>
+                                </tr>
+                            }
+                            else
+                            {
+                                foreach (var order in ViewBag.RecentOrders)
+                                {
+                                    <tr>
+                                        <td>#@order.Id</td>
+                                        <td>@order.CustomerName</td>
+                                        <td>@order.OrderDate.ToShortDateString()</td>
+                                        <td>
+                                            <span class="badge bg-light text-dark">@order.Status</span>
+                                        </td>
+                                        <td class="text-end">@order.TotalAmount</td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Actions / Shortcuts -->
+    <div class="col-lg-4">
+        <div class="card shadow-sm border-0 mb-3">
+            <div class="card-header bg-white border-0">
+                <h5 class="mb-0">Quick Actions</h5>
+            </div>
+            <div class="card-body">
+                <div class="d-grid gap-2">
+                    <a asp-controller="Product" asp-action="AdminIndex" class="btn btn-outline-secondary btn-sm">
+                        <i class="bi bi-box-seam me-1"></i> Manage Products
+                    </a>
+                    <a asp-controller="Admin" asp-action="Orders" class="btn btn-outline-secondary btn-sm ms-2">
+                        <i class="bi bi-receipt-cutoff me-1"></i> View Orders
+                    </a>
+
+                    <a asp-controller="Product" asp-action="Create" class="btn btn-outline-secondary btn-sm">
+                        <i class="bi bi-plus-circle me-1"></i> Add New Product
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-sm border-0">
+            <div class="card-header bg-white border-0">
+                <h5 class="mb-0">Admin Notes</h5>
+            </div>
+            <div class="card-body">
+                <p class="small text-muted mb-2">
+                    Use this dashboard to monitor store activity and keep your inventory up to date.
+                </p>
+                <ul class="small mb-0">
+                    <li>Review new orders daily.</li>
+                    <li>Update stock for popular sizes.</li>
+                    <li>Keep product details and images fresh.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+

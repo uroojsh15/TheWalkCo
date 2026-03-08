@@ -1,0 +1,72 @@
+﻿@model TheWalkco.Models.Order
+
+@{
+    Layout = "~/Views/Shared/Admin/_AdminLayout.cshtml";
+    ViewData["Title"] = "Order Details";
+}
+
+<h1 class="h4 mb-3">Order #@Model.Id</h1>
+
+<!-- 🔴 Hidden OrderId for SignalR -->
+<input type="hidden" id="orderId" value="@Model.Id" />
+
+<div class="row g-3 mb-3">
+    <div class="col-md-4">
+        <div class="card shadow-sm border-0 h-100">
+            <div class="card-body">
+                <h6 class="text-muted text-uppercase small mb-2">Customer</h6>
+                <p class="mb-1"><strong>Name:</strong> @Model.CustomerName</p>
+                <p class="mb-1"><strong>Email:</strong> @Model.CustomerEmail</p>
+                <p class="mb-0"><strong>Phone:</strong> @Model.CustomerPhone</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card shadow-sm border-0 h-100">
+            <div class="card-body">
+                <h6 class="text-muted text-uppercase small mb-2">Order Info</h6>
+                <p class="mb-1"><strong>Date:</strong> @Model.OrderDate.ToString("yyyy-MM-dd")</p>
+
+                <p class="mb-1">
+                    <strong>Status:</strong>
+
+                    @{
+                        string statusClass = Model.Status switch
+                        {
+                            "Pending" => "badge bg-warning text-dark",       // yellow bg, dark text
+                            "Shipped" => "badge bg-info text-dark",          // light blue bg, dark text
+                            "Delivered" => "badge bg-success text-white",    // green bg, white text (better contrast)
+                            _ => "badge bg-secondary text-white"
+                        };
+                    }
+                    <span id="orderStatus" class="@statusClass">
+                        @Model.Status
+                    </span>
+
+
+                </p>
+
+                <p class="mb-0"><strong>Payment:</strong> @(Model.PaymentMethod ?? "N/A")</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card shadow-sm border-0 h-100">
+            <div class="card-body">
+                <h6 class="text-muted text-uppercase small mb-2">Shipping</h6>
+                <p class="mb-1"><strong>Address:</strong></p>
+                <p class="mb-0">@Model.ShippingAddress</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- TABLE REMAINS SAME (NO CHANGE) -->
+
+<a asp-controller="Orders" asp-action="Index" class="btn btn-outline-secondary btn-sm">
+    <i class="bi bi-arrow-left"></i> Back to Orders
+</a>
+
+>

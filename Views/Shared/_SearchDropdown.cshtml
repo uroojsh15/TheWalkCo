@@ -1,0 +1,15 @@
+﻿@model IEnumerable<TheWalkco.Models.Product>
+
+@if (!Model.Any())
+{
+    <div class="list-group-item text-muted">No results found</div>
+}
+else
+{
+    @foreach (var product in Model.Take(5))
+    {
+        <a href="@Url.Action("Details", "Product", new { id = product.Id })" class="list-group-item list-group-item-action">
+            @product.Name
+        </a>
+    }
+}

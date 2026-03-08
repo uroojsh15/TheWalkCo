@@ -1,0 +1,63 @@
+﻿@model List<TheWalkco.Models.Order>
+
+@{
+    Layout = "~/Views/Shared/Admin/_AdminLayout.cshtml";
+
+    ViewData["Title"] = "Orders";
+}
+
+<h1 class="h4 mb-4">Orders</h1>
+
+<div class="card shadow-sm border-0">
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <table class="table mb-0 align-middle">
+                <thead class="small text-muted">
+                    <tr>
+                        <th>Order #</th>
+                        <th>Customer</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Total</th>
+                        <th class="text-end">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                        foreach (var order in Model)
+                        {
+                            <tr>
+                                <td>#@order.Id</td>
+                                <td>@order.CustomerName</td>
+                                <td>@order.OrderDate.ToString("yyyy-MM-dd")</td>
+                                <td>
+                                    <span class="badge
+                @(order.Status == "Pending" ? "bg-warning" :
+                                                    order.Status == "Shipped" ? "bg-primary" :
+                                                    order.Status == "Delivered" ? "bg-success" : "bg-secondary")">
+                                @order.Status
+                            </span>
+                        </td>
+
+                        <td>@order.TotalAmount.ToString("C")</td>
+                        <td class="text-end">
+                            <a asp-controller="Orders" asp-action="Details" asp-route-id="@order.Id"
+                               class="btn btn-sm btn-outline-secondary">
+                                <i class="bi bi-eye"></i> View
+                            </a>
+                        </td>
+                    </tr>
+                                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="6" class="text-center">No orders found.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

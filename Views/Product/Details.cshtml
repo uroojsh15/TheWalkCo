@@ -1,0 +1,193 @@
+﻿@model TheWalkco.Models.Product
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Product Details";
+}
+
+<style>
+    .product-image {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    input[type="radio"].size-radio {
+        display: none;
+    }
+
+    .size-label {
+        padding: 10px 15px;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        margin: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: inline-block;
+        user-select: none;
+    }
+
+        .size-label:hover {
+            border-color: #000;
+            background-color: #000;
+            color: white;
+        }
+
+    input[type="radio"].size-radio:checked + .size-label {
+        border-color: #000;
+        background-color: #000;
+        color: white;
+    }
+
+    .price {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .old-price {
+        text-decoration: line-through;
+        color: #999;
+        margin-left: 10px;
+    }
+
+    .feature-list {
+        list-style: none;
+        padding: 0;
+    }
+
+        .feature-list li {
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+            .feature-list li:before {
+                content: "✓ ";
+                color: green;
+                font-weight: bold;
+            }
+</style>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6">
+            @{
+                string categoryFolder = "others";
+
+                if (!string.IsNullOrEmpty(Model.Category))
+                {
+                    var cat = Model.Category.ToLower().Replace(" ", "");
+                    if (cat.StartsWith("women") || cat == "womenshoes")
+                    {
+                        categoryFolder = "womenshoes";
+                    }
+                    else if (cat.StartsWith("men") || cat == "menshoes")
+                    {
+                        categoryFolder = "menshoes";
+                    }
+                    else
+                    {
+                        categoryFolder = "others";
+                    }
+                }
+
+                var imagePath = !string.IsNullOrEmpty(Model.ImageUrl)
+                ? Url.Content($"~/images/{categoryFolder}/{Model.ImageUrl}")
+                : Url.Content("~/images/placeholder.png");
+            }
+            <img src="@imagePath" class="product-image" alt="@Model.Name" />
+
+
+
+        </div>
+
+        <div class="col-md-6">
+            <h1 class="mb-2">@Model.Name</h1>
+            <p class="text-muted mb-3">@Model.Category</p>
+
+            <div class="mb-3">
+                <span class="price">$@Model.Price.ToString("0.00")</span>
+                @* If you have an old price and discount info, you can add here dynamically *@
+                @* <span class="old-price">$120.00</span>
+                <span class="badge bg-danger ms-2">25% OFF</span> *@
+            </div>
+
+            <div class="mb-4">
+                <h5>Description</h5>
+                <p class="text-muted">@Model.Description</p>
+            </div>
+
+            <div class="mb-4">
+                <h5>Select Size</h5>
+                <div>
+                    @* Assuming sizes are stored as comma-separated string, split and render dynamically *@
+                    @{
+                        var sizes = (Model.Sizes ?? "").Split(',', System.StringSplitOptions.RemoveEmptyEntries | System.StringSplitOptions.TrimEntries);
+                        var firstSize = sizes.FirstOrDefault();
+                    }
+
+                    @foreach (var size in sizes)
+                    {
+                        var id = "size" + size.Replace(" ", "");
+                        <input type="radio" id="@id" name="size" value="@size" class="size-radio" @(size == firstSize ? "checked" : "") />
+                        <label for="@id" class="size-label">@size</label>
+                    }
+
+                    <br /><br />
+
+                    <form asp-controller="Cart" asp-action="Add" method="post" class="d-inline-block w-100">
+                        <input type="hidden" name="productId" value="@Model.Id" />
+                        <input type="hidden" id="selectedSize" name="size" value="@firstSize" />
+                        <input type="hidden" name="quantity" value="1" />
+
+                        <button type="submit" class="btn btn-dark text-white w-100 py-3">
+                            <i class="bi bi-cart3"></i> Add to Cart - $@Model.Price.ToString("0.00")
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h5>Features</h5>
+                <ul class="feature-list">
+                    <li>Breathable mesh upper</li>
+                    <li>Advanced cushioning technology</li>
+                    <li>Rubber outsole for traction</li>
+                    <li>Lightweight design</li>
+                    <li>Machine washable</li>
+                </ul>
+            </div>
+
+            <div class="row text-center border-top pt-3">
+                <div class="col-4">
+                    <i class="bi bi-truck fs-4"></i>
+                    <p class="small mb-0">Free Shipping</p>
+                </div>
+                <div class="col-4">
+                    <i class="bi bi-arrow-clockwise fs-4"></i>
+                    <p class="small mb-0">30-Day Returns</p>
+                </div>
+                <div class="col-4">
+                    <i class="bi bi-shield-check fs-4"></i>
+                    <p class="small mb-0">2-Year Warranty</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* You can also make the "You Might Also Like" section dynamic, pulling related products from the model or ViewBag *@
+</div>
+
+@section Scripts {
+    <script>
+        // Sync selected size radio with hidden input for form submit
+        const radios = document.querySelectorAll('input.size-radio');
+        const selectedSizeInput = document.getElementById('selectedSize');
+
+        radios.forEach(radio => {
+            radio.addEventListener('change', function () {
+                selectedSizeInput.value = this.value;
+            });
+        });
+    </script>
+}

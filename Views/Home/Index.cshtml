@@ -1,0 +1,138 @@
+﻿@model IEnumerable<TheWalkco.Models.Product>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Home";
+}
+
+<style>
+    .hero-title {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #ffffff;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    }
+</style>
+
+<div id="pageContent">
+    <section class="position-relative text-center text-white">
+        <img src="@Url.Content("~/images/menshoes/front3.jpeg")" class="img-fluid w-100" style="max-height: 500px; object-fit: cover;" alt="Hero Image" />
+        <div class="position-absolute top-50 start-50 translate-middle">
+            <h1 class="display-3 fw-bold hero-title">Step Into Style</h1>
+            <a asp-controller="Product" asp-action="Index" class="btn btn-dark btn-lg rounded-pill mt-3 px-4">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="mb-4">Men's Collection</h2>
+        <div class="row g-3">
+            @foreach (var product in Model.Where(p => p.Category != null && p.Category.ToLower().StartsWith("men")).Take(4))
+            {
+                string categoryFolder = "others";
+                var cat = product.Category.ToLower().Replace(" ", "");
+                if (cat.Contains("men"))
+                {
+                    categoryFolder = "menshoes";
+                }
+                else if (cat.Contains("women"))
+                {
+                    categoryFolder = "womenshoes";
+                }
+
+                var imagePath = !string.IsNullOrEmpty(product.ImageUrl)
+                ? Url.Content($"~/images/{categoryFolder}/{product.ImageUrl}")
+                : Url.Content("~/images/placeholder.png");
+
+                <div class="col-6 col-md-3">
+                    <a asp-controller="Product" asp-action="Index" asp-route-category="@product.Category" class="text-decoration-none text-dark">
+                        <div class="card shadow-sm product-card h-100">
+                            <img src="@imagePath" class="card-img-top" alt="@product.Name" />
+                            <div class="card-body text-center d-flex flex-column">
+                                <h6 class="card-title">@product.Name</h6>
+                                <p class="text-muted mt-auto">$@product.Price.ToString("0.00")</p>
+
+                                <form asp-controller="Cart" asp-action="Add" method="post" class="mt-2">
+                                    <input type="hidden" name="productId" value="@product.Id" />
+                                    <input type="hidden" name="size" value="M" />
+                                    <input type="hidden" name="quantity" value="1" />
+                                    <button type="submit" class="btn btn-dark btn-sm w-100">Add to Cart</button>
+                                </form>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+        <div class="text-center mt-3">
+            <a asp-controller="Product" asp-action="Index" asp-route-category="men" class="btn btn-outline-dark px-4 rounded-pill">View All Men's</a>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="mb-4">Women's Collection</h2>
+        <div class="row g-3">
+            @foreach (var product in Model.Where(p => p.Category != null && p.Category.ToLower().StartsWith("women")).Take(4))
+            {
+                string categoryFolder = "others";
+                var cat = product.Category.ToLower().Replace(" ", "");
+                if (cat.Contains("women"))
+                {
+                    categoryFolder = "womenshoes";
+                }
+                else if (cat.Contains("men"))
+                {
+                    categoryFolder = "menshoes";
+                }
+                else
+                {
+                    categoryFolder = "others";
+                }
+
+
+                var imagePath = !string.IsNullOrEmpty(product.ImageUrl)
+                ? Url.Content($"~/images/{categoryFolder}/{product.ImageUrl}")
+                : Url.Content("~/images/placeholder.png");
+
+                <div class="col-6 col-md-3">
+                    <a asp-controller="Product" asp-action="Index" asp-route-category="@product.Category" class="text-decoration-none text-dark">
+                        <div class="card shadow-sm product-card h-100">
+                            <img src="@imagePath" class="card-img-top" alt="@product.Name" />
+                            <div class="card-body text-center d-flex flex-column">
+                                <h6 class="card-title">@product.Name</h6>
+                                <p class="text-muted mt-auto">$@product.Price.ToString("0.00")</p>
+
+                                <form asp-controller="Cart" asp-action="Add" method="post" class="mt-2">
+                                    <input type="hidden" name="productId" value="@product.Id" />
+                                    <input type="hidden" name="size" value="M" />
+                                    <input type="hidden" name="quantity" value="1" />
+                                    <button type="submit" class="btn btn-dark btn-sm w-100">Add to Cart</button>
+                                </form>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+        <div class="text-center mt-3">
+            <a asp-controller="Product" asp-action="Index" asp-route-category="women" class="btn btn-outline-dark px-4 rounded-pill">View All Women's</a>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="mb-4">About Us</h2>
+        <p class="lead">
+            <strong>The Walk Co.</strong> is your ultimate destination for premium footwear for men and women.
+            Our mission is to bring you the latest trends and timeless classics with unmatched quality.
+        </p>
+        <p>
+            <strong>Address:</strong><br />
+            123 Shoe Street,<br />
+            Fashion City, TX 75001,<br />
+            United States
+        </p>
+    </section>
+</div>
+
+@section Scripts {
+    <script src="~/js/product-search.js"></script>
+}
+

@@ -1,0 +1,90 @@
+﻿@model TheWalkco.Models.Product
+
+@{
+    Layout = "~/Views/Shared/Admin/_AdminLayout.cshtml";
+    ViewBag.Title = "Edit Product";
+}
+
+<h1 class="h4 mb-4">@ViewBag.Title</h1>
+
+<div class="card shadow-sm border-0">
+    <div class="card-body">
+        <form asp-controller="Product" asp-action="Edit" method="post">
+            <!-- Hidden input for Product Id -->
+            <input type="hidden" name="Id" value="@Model.Id" />
+
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label class="form-label">Product Name</label>
+                    <input type="text" name="Name" class="form-control" value="@Model.Name" required />
+                </div>
+
+                <div class="col-md-3">
+                    <label class="form-label">Price ($)</label>
+                    <input type="number" name="Price" step="0.01" class="form-control" value="@Model.Price" required />
+                </div>
+
+                <div class="col-md-3">
+                    <label class="form-label">Category</label>
+                    <select name="Category" class="form-select" required>
+                        <option value="men-formal"
+                                selected="@(Model.Category == "men-formal" ? "selected" : null)">
+                            Men - Formal
+                        </option>
+
+                        <option value="men-casual"
+                                selected="@(Model.Category == "men-casual" ? "selected" : null)">
+                            Men - Casual
+                        </option>
+
+                        <option value="men-sandals"
+                                selected="@(Model.Category == "men-sandals" ? "selected" : null)">
+                            Men - Sandals
+                        </option>
+
+                        <option value="women-heels"
+                                selected="@(Model.Category == "women-heels" ? "selected" : null)">
+                            Women - Heels
+                        </option>
+
+                        <option value="women-flats"
+                                selected="@(Model.Category == "women-flats" ? "selected" : null)">
+                            Women - Flats
+                        </option>
+
+                        <option value="women-sneakers"
+                                selected="@(Model.Category == "women-sneakers" ? "selected" : null)">
+                            Women - Sneakers
+                        </option>
+                    </select>
+                </div>
+
+
+                <div class="col-md-4">
+                    <label class="form-label">Available Sizes</label>
+                    <input type="text" name="Sizes" class="form-control" value="@Model.Sizes" />
+                </div>
+
+                <div class="col-md-4">
+                    <label class="form-label">Stock Quantity</label>
+                    <input type="number" name="Stock" class="form-control" value="@Model.Stock" />
+                </div>
+
+                <div class="col-md-4">
+                    <label class="form-label">Image URL</label>
+                    <input type="text" name="ImageUrl" class="form-control" value="@Model.ImageUrl" />
+                </div>
+
+                <div class="col-12">
+                    <label class="form-label">Description</label>
+                    <textarea name="Description" rows="3" class="form-control">@Model.Description</textarea>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-end mt-4">
+                <a asp-controller="Product" asp-action="AdminIndex" class="btn btn-outline-secondary me-2">Cancel</a>
+                <button type="submit" class="btn btn-dark">Update Product</button>
+            </div>
+        </form>
+    </div>
+</div>

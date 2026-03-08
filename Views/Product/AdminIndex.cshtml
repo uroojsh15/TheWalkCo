@@ -1,0 +1,70 @@
+﻿@model IEnumerable<TheWalkco.Models.Product>
+
+@{
+    Layout = "~/Views/Shared/Admin/_AdminLayout.cshtml";
+
+    ViewData["Title"] = "Manage Products";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1 class="h4 mb-0">Manage Products</h1>
+    <a asp-controller="Product" asp-action="Create" class="btn btn-dark btn-sm">
+        <i class="bi bi-plus-circle me-1"></i> Add Product
+    </a>
+</div>
+
+<div class="card shadow-sm border-0">
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <table class="table mb-0 align-middle">
+                <thead class="small text-muted">
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Size</th>
+                        <th>Stock</th>
+                        <th class="text-end">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var product in Model)
+                    {
+                        <tr>
+                            <td>
+                                @{
+                                    var folder = product.Category != null && product.Category.StartsWith("men") ? "menshoes" : "womenshoes";
+                                    var imagePath = Url.Content($"~/images/{folder}/" + product.ImageUrl);
+                                }
+                                <img src="@imagePath" width="60" height="60" class="rounded" alt="@product.Name" />
+                            </td>
+
+                            <td>@product.Name</td>
+
+                            <td>@product.Category</td>
+
+                            <td>$@product.Price</td>
+
+                            <td>@product.Sizes</td>
+
+                            <td>@product.Stock</td>
+
+                            <td class="text-end">
+                                <a asp-controller="Product" asp-action="Edit" asp-route-id="@product.Id"
+                                   class="btn btn-sm btn-outline-primary me-1">
+                                    <i class="bi bi-pencil-square"></i>
+                                </a>
+
+                                <a asp-controller="Product" asp-action="Delete" asp-route-id="@product.Id"
+                                   class="btn btn-sm btn-outline-danger">
+                                    <i class="bi bi-trash3"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

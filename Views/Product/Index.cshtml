@@ -1,0 +1,29 @@
+﻿@model IEnumerable<TheWalkco.Models.Product>
+
+@{
+    ViewData["Title"] = "Products";
+    int productCount = Model?.Count() ?? 0;
+}
+
+<!-- Initial products -->
+<div id="searchResults">
+    @Html.Partial("_ProductCards", Model)
+</div>
+
+<div class="d-flex justify-content-between align-items-center mb-4 mt-4">
+    <h2>Products</h2>
+    <span class="text-muted">@productCount products</span>
+</div>
+
+
+
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/product-search.js"></script>
+
+    
+
+       
+    </script>
+}

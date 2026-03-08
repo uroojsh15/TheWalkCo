@@ -1,0 +1,104 @@
+﻿@model List<TheWalkco.Models.Order>
+
+@{
+    Layout = "~/Views/Shared/Admin/_AdminLayout.cshtml";
+    ViewData["Title"] = "Manage Orders";
+}
+
+<h1 class="h4 mb-4">Manage Orders</h1>
+
+<div class="card shadow-sm border-0">
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <table class="table mb-0 align-middle">
+                <thead class="small text-muted">
+                    <tr>
+                        <th>Order #</th>
+                        <th>Customer</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Total</th>
+                        <th class="text-end">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                        foreach (var order in Model)
+                        {
+                            <tr>
+                                <td>#@order.Id</td>
+                                <td>@order.CustomerName</td>
+                                <td>@order.OrderDate.ToString("yyyy-MM-dd")</td>
+                                <td>
+                                    <select class="form-select form-select-sm order-status"
+                                            data-order-id="@order.Id">
+                                        <option value="Pending" selected="@(order.Status == "Pending")">Pending</option>
+                                        <option value="Shipped" selected="@(order.Status == "Shipped")">Shipped</option>
+                                        <option value="Delivered" selected="@(order.Status == "Delivered")">Delivered</option>
+                                    </select>
+                                </td>
+                                <td>@order.TotalAmount.ToString("C")</td>
+                                <td class="text-end">
+                                    <a asp-controller="Orders" asp-action="Details" asp-route-id="@order.Id"
+                                       class="btn btn-sm btn-outline-secondary">
+                                        <i class="bi bi-eye"></i> View
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="6" class="text-center">No orders found.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<style>
+    .order-status {
+        font-weight: 500;
+    }
+
+        .order-status option[value="Pending"] {
+            color: #856404; /* amber/yellow */
+        }
+
+        .order-status option[value="Shipped"] {
+            color: #0d6efd; /* blue */
+        }
+
+        .order-status option[value="Delivered"] {
+            color: #198754; /* green */
+        }
+</style>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).on("change", ".order-status", function () {
+            var orderId = $(this).data("order-id");
+            var status = $(this).val();
+
+            $.ajax({
+                url: '/Admin/UpdateStatus',
+                type: 'POST',
+                data: {
+                    orderId: orderId,
+                    status: status
+                },
+                success: function () {
+                    console.log("Order status updated");
+                },
+                error: function () {
+                    alert("Failed to update order status.");
+                }
+            });
+        });
+    </script>
+}

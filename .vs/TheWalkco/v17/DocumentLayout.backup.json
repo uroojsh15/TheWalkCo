@@ -1,0 +1,1154 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\views\\admin\\orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:views\\admin\\orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\views\\product\\_productcards.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:views\\product\\_productcards.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\views\\product\\adminindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:views\\product\\adminindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\views\\checkout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:views\\checkout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\views\\orders\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:views\\orders\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_TheWalkco_605d5991_8958_4af3_a95b_75211e74b982/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TestProject1\\Test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\hubs\\orderhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:hubs\\orderhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\views\\shared\\admin\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:views\\shared\\admin\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\wwwroot\\js\\product-search.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:wwwroot\\js\\product-search.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\models\\respositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:models\\respositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\models\\respositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:models\\respositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\models\\services\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:models\\services\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\models\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:models\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\views\\product\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:views\\product\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\models\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:models\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_TheWalkco_605d5991_8958_4af3_a95b_75211e74b982/True/SqlTable/dbo.Products.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\hubs\\producthub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:hubs\\producthub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\models\\interfaces\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:models\\interfaces\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\models\\orderconfirmation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:models\\orderconfirmation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\views\\shared\\_searchdropdown.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:views\\shared\\_searchdropdown.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\views\\shared\\components\\cartsummary\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:views\\shared\\components\\cartsummary\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\views\\shared\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:views\\shared\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\areas\\identity\\pages\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:areas\\identity\\pages\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\areas\\identity\\pages\\account\\accessdenied.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:areas\\identity\\pages\\account\\accessdenied.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\views\\checkout\\confirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:views\\checkout\\confirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\noopemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:noopemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\areas\\identity\\pages\\account\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:areas\\identity\\pages\\account\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\viewcomponents\\cartsummaryviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:viewcomponents\\cartsummaryviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\thewalkco.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:thewalkco.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\data\\migrations\\20251123132453_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:data\\migrations\\20251123132453_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Models\\Products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\Products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Products\\AdminIndex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Products\\AdminIndex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Products\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Products\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Products\\Create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Products\\Create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Products\\Delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Products\\Delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Products\\Details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Products\\Details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Products\\Edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Products\\Edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\data\\migrations\\20251205181416_removeusercolumnfromorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:data\\migrations\\20251205181416_removeusercolumnfromorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\data\\migrations\\20251205134937_addpaymentmethodtoorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:data\\migrations\\20251205134937_addpaymentmethodtoorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|c:\\users\\maham\\onedrive\\desktop\\c#\\thewalkco\\data\\migrations\\20251227140511_addcategorycolumn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE535309-FCB0-4784-9C9C-0BF6A99CEE05}|TheWalkco.csproj|solutionrelative:data\\migrations\\20251227140511_addcategorycolumn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-01T14:18:24.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Product\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Product\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Product\\Edit.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-01T14:17:28.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_ProductCards.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Product\\_ProductCards.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\_ProductCards.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Product\\_ProductCards.cshtml",
+              "RelativeToolTip": "Views\\Product\\_ProductCards.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAB0AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-10T17:36:41.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Orders.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Admin\\Orders.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Orders.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Admin\\Orders.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Orders.cshtml",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAQwGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-24T19:54:22.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Controllers\\AdminController.cs*",
+              "RelativeToolTip": "Controllers\\AdminController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T09:49:33.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T09:57:31.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AdminIndex.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Product\\AdminIndex.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\AdminIndex.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Product\\AdminIndex.cshtml",
+              "RelativeToolTip": "Views\\Product\\AdminIndex.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-01T14:16:57.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Checkout\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Checkout\\Index.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Checkout\\Index.cshtml",
+              "RelativeToolTip": "Views\\Checkout\\Index.cshtml",
+              "ViewState": "AgIAAOUAAAAAAAAAAAAAAMUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-08T09:07:35.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Orders\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Orders\\Index.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Orders\\Index.cshtml",
+              "RelativeToolTip": "Views\\Orders\\Index.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T09:42:31.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "Views\\Cart\\Index.cshtml",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAQwIQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-08T09:07:22.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Orders\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Orders\\Details.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Orders\\Details.cshtml",
+              "RelativeToolTip": "Views\\Orders\\Details.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T09:42:55.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "dbo.AspNetUsers [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_TheWalkco_605d5991_8958_4af3_a95b_75211e74b982/True/SqlTable/dbo.AspNetUsers.sql",
+              "ToolTip": "dbo.AspNetUsers [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-03-08T15:24:39.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CheckoutController.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Controllers\\CheckoutController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CheckoutController.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Controllers\\CheckoutController.cs",
+              "RelativeToolTip": "Controllers\\CheckoutController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T20:52:37.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Shared\\Admin\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Admin\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Shared\\Admin\\_AdminLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Admin\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAuwJsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-24T19:40:35.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "OrderHub.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Hubs\\OrderHub.cs",
+              "RelativeDocumentMoniker": "Hubs\\OrderHub.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Hubs\\OrderHub.cs",
+              "RelativeToolTip": "Hubs\\OrderHub.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAuwCQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T19:31:18.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Test1.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TestProject1\\Test1.cs",
+              "RelativeDocumentMoniker": "..\\TestProject1\\Test1.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TestProject1\\Test1.cs",
+              "RelativeToolTip": "..\\TestProject1\\Test1.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T06:20:38.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABQAAADAqiofdE4iwLYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T14:15:37.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T19:36:28.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T20:50:53.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Controllers\\CartController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T20:51:31.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowKYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T20:24:19.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAIwFgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T11:00:03.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Dashboard.cshtml",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAAALQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T09:38:14.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Product\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\Details.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Product\\Details.cshtml",
+              "RelativeToolTip": "Views\\Product\\Details.cshtml",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAqwJEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-01T14:17:43.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-08T08:58:15.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "product-search.js",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\wwwroot\\js\\product-search.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\product-search.js",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\wwwroot\\js\\product-search.js",
+              "RelativeToolTip": "wwwroot\\js\\product-search.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-12-10T16:51:04.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAANQAAAAAAAAAAAAmwOkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-08T08:46:03.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\Create.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "Views\\Product\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-01T14:17:13.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Orderrepository.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Models\\Respositories\\Orderrepository.cs",
+              "RelativeDocumentMoniker": "Models\\Respositories\\Orderrepository.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Models\\Respositories\\Orderrepository.cs",
+              "RelativeToolTip": "Models\\Respositories\\Orderrepository.cs",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAowJgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T18:49:16.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "Models\\CartItem.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Models\\CartItem.cs",
+              "RelativeToolTip": "Models\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T21:35:28.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Models\\Interfaces\\IOrderService.cs",
+              "RelativeDocumentMoniker": "Models\\Interfaces\\IOrderService.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Models\\Interfaces\\IOrderService.cs",
+              "RelativeToolTip": "Models\\Interfaces\\IOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T18:38:32.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "20251227140511_AddCategoryColumn.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Data\\Migrations\\20251227140511_AddCategoryColumn.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20251227140511_AddCategoryColumn.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Data\\Migrations\\20251227140511_AddCategoryColumn.cs",
+              "RelativeToolTip": "Data\\Migrations\\20251227140511_AddCategoryColumn.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T14:05:11.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Models\\Services\\IOrderService.cs",
+              "RelativeDocumentMoniker": "Models\\Services\\IOrderService.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Models\\Services\\IOrderService.cs",
+              "RelativeToolTip": "Models\\Services\\IOrderService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T14:41:06.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Productrepository.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Models\\Respositories\\Productrepository.cs",
+              "RelativeDocumentMoniker": "Models\\Respositories\\Productrepository.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Models\\Respositories\\Productrepository.cs",
+              "RelativeToolTip": "Models\\Respositories\\Productrepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T18:48:37.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Product\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Product\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Product\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-01T14:17:59.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T18:44:58.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Models\\Interfaces\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "Models\\Interfaces\\IProductRepository.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Models\\Interfaces\\IProductRepository.cs",
+              "RelativeToolTip": "Models\\Interfaces\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T18:48:26.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "dbo.Products.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_TheWalkco_605d5991_8958_4af3_a95b_75211e74b982/True/SqlTable/dbo.Products.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_TheWalkco_605d5991_8958_4af3_a95b_75211e74b982/True/SqlTable/dbo.Products.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-12-26T14:39:43.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ProductHub.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Hubs\\ProductHub.cs",
+              "RelativeDocumentMoniker": "Hubs\\ProductHub.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Hubs\\ProductHub.cs",
+              "RelativeToolTip": "Hubs\\ProductHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T14:18:19.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "IOrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Models\\Interfaces\\IOrderRepository.cs",
+              "RelativeDocumentMoniker": "Models\\Interfaces\\IOrderRepository.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Models\\Interfaces\\IOrderRepository.cs",
+              "RelativeToolTip": "Models\\Interfaces\\IOrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T18:49:07.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "Models\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Models\\OrderItem.cs",
+              "RelativeToolTip": "Models\\OrderItem.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T13:05:50.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T13:05:01.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "OrderConfirmation.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Models\\OrderConfirmation.cs",
+              "RelativeDocumentMoniker": "Models\\OrderConfirmation.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Models\\OrderConfirmation.cs",
+              "RelativeToolTip": "Models\\OrderConfirmation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T12:11:26.153Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "_SearchDropdown.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Shared\\_SearchDropdown.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_SearchDropdown.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Shared\\_SearchDropdown.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_SearchDropdown.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-24T12:48:24.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Shared\\Components\\CartSummary\\Default.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Components\\CartSummary\\Default.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Shared\\Components\\CartSummary\\Default.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Components\\CartSummary\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-17T18:57:04.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "ScaffoldingReadMe.txt",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-11-15T10:57:01.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Shared\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\AccessDenied.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Shared\\AccessDenied.cshtml",
+              "RelativeToolTip": "Views\\Shared\\AccessDenied.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-20T12:56:35.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "AccessDenied.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T12:39:24.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Logout.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAmwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T12:39:24.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-20T12:39:25.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Logout.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-20T12:39:26.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Confirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Checkout\\Confirmation.cshtml",
+              "RelativeDocumentMoniker": "Views\\Checkout\\Confirmation.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Checkout\\Confirmation.cshtml",
+              "RelativeToolTip": "Views\\Checkout\\Confirmation.cshtml",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAlwGkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-08T09:07:55.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "NoOpEmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\NoOpEmailSender.cs",
+              "RelativeDocumentMoniker": "NoOpEmailSender.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\NoOpEmailSender.cs",
+              "RelativeToolTip": "NoOpEmailSender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T18:34:17.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-18T07:10:32.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T12:50:16.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "CartSummaryViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\ViewComponents\\CartSummaryViewComponent.cs",
+              "RelativeDocumentMoniker": "ViewComponents\\CartSummaryViewComponent.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\ViewComponents\\CartSummaryViewComponent.cs",
+              "RelativeToolTip": "ViewComponents\\CartSummaryViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T18:54:11.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "TheWalkco.csproj",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\TheWalkco.csproj",
+              "RelativeDocumentMoniker": "TheWalkco.csproj",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\TheWalkco.csproj",
+              "RelativeToolTip": "TheWalkco.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-15T10:53:25.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAswJYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T19:37:01.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T10:59:57.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-05T19:44:52.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-05T14:09:32.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "20251205181416_RemoveUserColumnFromOrder.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Data\\Migrations\\20251205181416_RemoveUserColumnFromOrder.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20251205181416_RemoveUserColumnFromOrder.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Data\\Migrations\\20251205181416_RemoveUserColumnFromOrder.cs",
+              "RelativeToolTip": "Data\\Migrations\\20251205181416_RemoveUserColumnFromOrder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T18:14:16.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "20251205134937_AddPaymentMethodToOrder.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Data\\Migrations\\20251205134937_AddPaymentMethodToOrder.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20251205134937_AddPaymentMethodToOrder.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Data\\Migrations\\20251205134937_AddPaymentMethodToOrder.cs",
+              "RelativeToolTip": "Data\\Migrations\\20251205134937_AddPaymentMethodToOrder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T13:49:38.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "20251123132453_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Data\\Migrations\\20251123132453_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20251123132453_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Data\\Migrations\\20251123132453_InitialCreate.cs",
+              "RelativeToolTip": "Data\\Migrations\\20251123132453_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T13:24:54.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "Products.cs",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Models\\Products.cs",
+              "RelativeDocumentMoniker": "Models\\Products.cs",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Models\\Products.cs",
+              "RelativeToolTip": "Models\\Products.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T12:48:05.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "AdminIndex.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Products\\AdminIndex.cshtml",
+              "RelativeDocumentMoniker": "Views\\Products\\AdminIndex.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Products\\AdminIndex.cshtml",
+              "RelativeToolTip": "Views\\Products\\AdminIndex.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T09:40:32.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Products\\Index.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "Views\\Products\\Index.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-08T09:08:12.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Products\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Products\\Create.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Products\\Create.cshtml",
+              "RelativeToolTip": "Views\\Products\\Create.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T09:40:47.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Products\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Products\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Products\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Products\\Delete.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T09:41:48.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Products\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Products\\Details.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Products\\Details.cshtml",
+              "RelativeToolTip": "Views\\Products\\Details.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-08T09:08:39.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Products\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Products\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\maham\\OneDrive\\Desktop\\c#\\TheWalkco\\Views\\Products\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Products\\Edit.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T09:41:34.508Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

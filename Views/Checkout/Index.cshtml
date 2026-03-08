@@ -1,0 +1,229 @@
+﻿@model List<TheWalkco.Models.CartItem>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Checkout";
+
+    decimal totalPrice = 0;
+    if (Model != null)
+    {
+        totalPrice = Model.Sum(item => item.UnitPrice * item.Quantity);
+    }
+}
+<style>
+    .checkout-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .form-control:focus {
+        border-color: #000;
+        box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+    }
+
+    .payment-option {
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+
+        .payment-option:hover {
+            border-color: #000;
+        }
+
+    .payment-details {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #eee;
+    }
+
+    /* Hide card fields by default */
+    #cardFields {
+        display: none;
+    }
+
+    /* Show card fields when credit card is selected */
+    #creditCard:checked ~ #cardFields {
+        display: block;
+    }
+
+    /* Hide cash message by default */
+    #cashMessage {
+        display: none;
+    }
+
+    /* Show cash message when cash on delivery is selected */
+    #cashOnDelivery:checked ~ #cashMessage {
+        display: block;
+    }
+</style>
+
+<div class="container my-5">
+    <div class="checkout-container">
+        <h1 class="mb-4">Checkout</h1>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-white">
+                        <h5 class="mb-0">Shipping Information</h5>
+                    </div>
+                    <div class="card-body">
+                        <form method="post" asp-controller="Checkout" asp-action="Index">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="customerName" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="customerName" name="customerName" required />
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="customerEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="customerEmail" name="customerEmail" required />
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="customerPhone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="customerPhone" name="customerPhone" required />
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="shippingAddress" class="form-label">Shipping Address</label>
+                                <input type="text" class="form-control" id="shippingAddress" name="shippingAddress" required />
+                            </div>
+
+                            <hr class="my-4" />
+
+                            <h5 class="mb-3">Payment Method</h5>
+
+                            @* <div class="payment-option">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" value="creditcard" checked />
+                                    <label class="form-check-label fw-bold" for="creditCard">
+                                        <i class="bi bi-credit-card"></i> Credit/Debit Card
+                                    </label>
+                                </div>
+
+                                <div id="cardFields" class="payment-details">
+                                    <div class="mb-3">
+                                        <label for="cardNumber" class="form-label">Card Number</label>
+                                        <input type="text" class="form-control" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" />
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="expiryDate" class="form-label">Expiry Date</label>
+                                            <input type="text" class="form-control" id="expiryDate" name="expiryDate" placeholder="MM/YY" />
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="cvv" class="form-label">CVV</label>
+                                            <input type="text" class="form-control" id="cvv" name="cvv" placeholder="123" />
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="cardName" class="form-label">Name on Card</label>
+                                        <input type="text" class="form-control" id="cardName" name="cardName" />
+                                    </div>
+                                </div>
+                            </div> *@
+                           
+                            <div class="payment-option">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="paymentMethod" id="cashOnDelivery" value="cashondelivery" />
+                                    <label class="form-check-label fw-bold" for="cashOnDelivery">
+                                        <i class="bi bi-cash"></i> Cash on Delivery
+                                    </label>
+                                </div>
+
+                                <div id="cashMessage" class="payment-details">
+                                    <div class="alert alert-info">
+                                        <i class="bi bi-info-circle"></i>
+                                        <strong>Pay when you receive your order</strong><br />
+                                        You'll pay the delivery person when your order arrives.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-dark text-white w-100 py-3 mt-3">
+                                Place Order
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-white">
+                        <h5 class="mb-0">Order Summary</h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- You can dynamically render your order summary here -->
+                        @if (Model != null && Model.Count > 0)
+                        {
+                            foreach (var item in Model)
+                            {
+                                var imagePath = !string.IsNullOrEmpty(item.ImageUrl)
+                                ? Url.Content(item.ImageUrl)
+                                : Url.Content("~/images/placeholder.png");
+
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="@imagePath" style="width:60px;height:60px;object-fit:cover;border-radius:6px;" />
+
+                                    <div class="ms-3 flex-grow-1">
+                                        <div>@item.ProductName</div>
+                                        <small>Size: @item.Size</small><br />
+                                        <small>Qty: @item.Quantity</small>
+                                    </div>
+
+                                    <div>
+                                        $@(item.UnitPrice* item.Quantity)
+                                    </div>
+                                </div>
+                            }
+
+                            <hr />
+
+                            <div class="d-flex justify-content-between fw-bold">
+                                <span>Total</span>
+                                <span>$@totalPrice</span>
+                            </div>
+                        }
+                        else
+                        {
+                            <p>Your cart is empty.</p>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Toggle card fields visibility based on selected payment method
+    document.addEventListener('DOMContentLoaded', () => {
+        const creditCardRadio = document.getElementById('creditCard');
+        const cashRadio = document.getElementById('cashOnDelivery');
+        const cardFields = document.getElementById('cardFields');
+        const cashMessage = document.getElementById('cashMessage');
+
+        function togglePaymentFields() {
+            if (creditCardRadio.checked) {
+                cardFields.style.display = 'block';
+                cashMessage.style.display = 'none';
+            } else if (cashRadio.checked) {
+                cardFields.style.display = 'none';
+                cashMessage.style.display = 'block';
+            }
+        }
+
+        creditCardRadio.addEventListener('change', togglePaymentFields);
+        cashRadio.addEventListener('change', togglePaymentFields);
+
+        togglePaymentFields(); // Initial call
+    });
+</script>

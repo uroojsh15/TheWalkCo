@@ -1,0 +1,376 @@
+﻿@using System.Security.Claims
+@using System.Text.Json
+@using TheWalkco.Models
+
+@{
+    var isAuthenticated = User.Identity?.IsAuthenticated ?? false;
+    var isAdmin = User.IsInRole("Admin");
+
+    var cartCount = 0;
+    var cartCookie = Context.Request.Cookies["Cart"];
+
+    if (!string.IsNullOrEmpty(cartCookie))
+    {
+        try
+        {
+            var cartItems = JsonSerializer.Deserialize<List<CartItem>>(cartCookie);
+            cartCount = cartItems?.Sum(c => c.Quantity) ?? 0;
+        }
+        catch
+        {
+            cartCount = 0;
+        }
+    }
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - The Walk Co.</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <style>
+        .navbar {
+            background-color: #ffffff;
+        }
+
+        .icon-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: none;
+            background-color: #f3f3f3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+            .icon-btn:hover {
+                background-color: #000;
+                color: #fff;
+            }
+
+        .cart-badge {
+            font-size: 10px;
+            top: 5px;
+            right: 6px;
+        }
+
+        .search-bar {
+            border: none;
+            border-bottom: 1px solid #ccc;
+            outline: none;
+            background: transparent;
+            width: 150px;
+            transition: width 0.3s ease;
+        }
+
+            .search-bar:focus {
+                width: 200px;
+                border-color: #000;
+            }
+
+        .nav-link.active {
+            font-weight: 600;
+            color: #000 !important;
+        }
+
+        /* Product card styles */
+        .product-card {
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+            .product-card:hover {
+                transform: translateY(-5px);
+            }
+
+                .product-card:hover img {
+                    transform: scale(1.05);
+                }
+
+            .product-card img {
+                transition: transform 0.3s ease;
+                height: 250px;
+                object-fit: cover;
+            }
+
+        .add-to-cart-btn {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            width: 90%;
+        }
+
+        .product-card:hover .add-to-cart-btn {
+            opacity: 1;
+        }
+
+        #ProductNotificationsContainer {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1050;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="border-bottom shadow-sm sticky-top">
+        <nav class="navbar navbar-expand-lg py-3">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand fw-bold fs-4" asp-controller="Home" asp-action="Index">The Walk Co.</a>
+
+                <!-- Mobile toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar items -->
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <!-- New In -->
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">New In</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" asp-controller="Product" asp-action="Index" asp-route-category="all">Latest Arrivals</a></li>
+                                <li><a class="dropdown-item" asp-controller="Product" asp-action="Index" asp-route-category="all">Trending</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Men -->
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Men</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" asp-controller="Product" asp-action="Index" asp-route-category="men-sandals">Sandals</a></li>
+                                <li><a class="dropdown-item" asp-controller="Product" asp-action="Index" asp-route-category="men-formal">Formal</a></li>
+                                <li><a class="dropdown-item" asp-controller="Product" asp-action="Index" asp-route-category="men-casual">Casual</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Women -->
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Women</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" asp-controller="Product" asp-action="Index" asp-route-category="women-heels">Heels</a></li>
+                                <li><a class="dropdown-item" asp-controller="Product" asp-action="Index" asp-route-category="women-flats">Flats</a></li>
+                                <li><a class="dropdown-item" asp-controller="Product" asp-action="Index" asp-route-category="women-sneakers">Sneakers</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- All Products -->
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" asp-controller="Product" asp-action="Index" asp-route-category="all">All Products</a>
+                        </li>
+                    </ul>
+
+                    <!-- Right side icons -->
+                    <div class="d-flex align-items-center">
+                        <!-- Search -->
+                        <div class="d-flex align-items-center me-3">
+                            <input id="searchInput" class="search-bar me-2" type="text" placeholder="Search products..." />
+                            <button id="searchButton" type="button" class="icon-btn">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+
+
+
+                        <!-- Cart -->
+                        <a asp-controller="Cart" asp-action="Index" class="position-relative me-3 icon-btn text-dark">
+                            <i class="bi bi-cart3"></i>
+                            <span class="position-absolute translate-middle badge rounded-pill bg-danger cart-badge">@cartCount</span>
+                        </a>
+
+                        @if (isAuthenticated)
+                        {
+                            <div class="dropdown">
+                                <button class="icon-btn text-dark me-2 dropdown-toggle" type="button" id="userMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-person"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userMenu">
+                                    <li><a class="dropdown-item" asp-controller="Orders" asp-action="Index">My Orders</a></li>
+
+                                    @if (isAdmin)
+                                    {
+                                        <li><a class="dropdown-item" asp-controller="Admin" asp-action="Dashboard">Admin Dashboard</a></li>
+                                    }
+
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li>
+                                        <form asp-area="Identity"
+                                              asp-page="/Account/Logout"
+                                              asp-route-returnUrl="@Url.Page("/Index", new { area = "" })"
+                                              method="post"
+                                              class="d-inline">
+
+                                            <button type="submit" class="dropdown-item">
+                                                Logout
+                                            </button>
+                                        </form>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        }
+                        else
+                        {
+                            <a asp-area="Identity" asp-page="/Account/Login" class="icon-btn text-dark me-2">
+                                <i class="bi bi-person"></i>
+                            </a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="cart-summary">
+            @await Component.InvokeAsync("CartSummary")
+        </div>
+    </header>
+
+    <!-- Main Content -->
+ <main role="main" class="py-4">
+
+        <div id="searchResults" class="container" style="display:none;"></div>
+        <div id="pageContent" class="container">
+            @RenderBody()
+        </div>
+
+
+</main>
+
+
+    <!-- Footer -->
+    <footer class="bg-light border-top mt-5 py-4">
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- Brand / About -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">The Walk Co.</h5>
+                    <p class="text-muted small mb-0">
+                        Step into style with premium footwear for men and women.
+                        Designed for comfort. Made for confidence.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-2">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled small">
+                        <li><a asp-controller="Home" asp-action="Index" class="text-muted text-decoration-none">Home</a></li>
+                        <li><a asp-controller="Product" asp-action="Index" class="text-muted text-decoration-none">Shop</a></li>
+                        <li><a asp-area="Identity" asp-page="/Account/Login" class="text-muted text-decoration-none">Login</a></li>
+                        <li><a asp-area="Identity" asp-page="/Account/Register" class="text-muted text-decoration-none">Register</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories -->
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Categories</h6>
+                    <ul class="list-unstyled small">
+                        <li><a asp-controller="Product" asp-action="Index" asp-route-category="men-formal" class="text-muted text-decoration-none">Men - Formal</a></li>
+                        <li><a asp-controller="Product" asp-action="Index" asp-route-category="women-heels" class="text-muted text-decoration-none">Women - Heels</a></li>
+                        <li><a asp-controller="Product" asp-action="Index" asp-route-category="women-sneakers" class="text-muted text-decoration-none">Sneakers</a></li>
+                        <li><a asp-controller="Product" asp-action="Index" asp-route-category="trending" class="text-muted text-decoration-none">Trending</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Social -->
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Contact Us</h6>
+                    <p class="small text-muted mb-2"><i class="bi bi-envelope me-2"></i> support@thewalkco.com</p>
+                    <p class="small text-muted mb-3"><i class="bi bi-telephone me-2"></i> +92-300-1234567</p>
+
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-dark fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-dark fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-dark fs-5"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="my-4" />
+
+            <div class="text-center small text-muted">
+                &copy; @DateTime.Now.Year The Walk Co. — All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.0/signalr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.0/signalr.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const connection = new signalR.HubConnectionBuilder()
+                .withUrl("/productHub")
+                .withAutomaticReconnect()
+                .build();
+
+            connection.on("ReceiveNewProduct", function (productName, productId) {
+                showNewProductToast(productName, productId);
+            });
+
+            connection.start().catch(err => console.error(err.toString()));
+
+            function showNewProductToast(productName, productId) {
+                // Create container if missing
+                let container = document.getElementById("ProductNotificationsContainer");
+                if (!container) {
+                    container = document.createElement("div");
+                    container.id = "ProductNotificationsContainer";
+                    container.style.position = "fixed";
+                    container.style.top = "20px";
+                    container.style.right = "20px";
+                    container.style.zIndex = "2000";
+                    document.body.appendChild(container);
+                }
+
+                // Toast HTML
+                const toast = document.createElement("div");
+                toast.className = "toast align-items-center border-0 shadow-sm mb-3 show";
+                toast.style.minWidth = "280px";
+                toast.innerHTML = `
+                    <div class="d-flex p-3" style="background: #ffffff; border-left: 4px solid #007bff;">
+                        <div class="flex-grow-1">
+                            <strong class="text-dark">New Product Added</strong><br/>
+                            <span class="text-muted">${productName}</span>
+                        </div>
+                        <button type="button" class="btn-close" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body px-3 py-2 bg-light">
+                        <a href="/Product/Details/${productId}" class="btn btn-primary btn-sm w-100">
+                            View Product
+                        </a>
+                    </div>
+                `;
+
+                // Add to container
+                container.appendChild(toast);
+
+                // Close button
+                toast.querySelector(".btn-close").onclick = () => toast.remove();
+
+                // Auto-remove after 10s
+                setTimeout(() => toast.remove(), 10000);
+            }
+        });
+    </script>
+
+
+
+</body>
+</html>

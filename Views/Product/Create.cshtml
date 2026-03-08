@@ -1,0 +1,75 @@
+﻿@model TheWalkco.Models.Product
+
+@{
+    Layout = "~/Views/Shared/Admin/_AdminLayout.cshtml";
+    ViewBag.Title = "Add Product";
+}
+
+<h1 class="h4 mb-4">Add New Product</h1>
+
+<div class="card shadow-sm border-0">
+    <div class="card-body">
+        <form asp-action="Create" method="post" asp-controller="Product">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label asp-for="Name" class="form-label">Product Name</label>
+                    <input asp-for="Name" class="form-control" placeholder="Enter product name" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div class="col-md-3">
+                    <label asp-for="Price" class="form-label">Price</label>
+                    <input asp-for="Price" type="number" step="0.01" min="0" class="form-control" placeholder="0.00" />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+
+                <div class="col-md-3">
+                    <label asp-for="Category" class="form-label">Category</label>
+                    <select asp-for="Category" class="form-select">
+                        <option value="">Select category</option>
+                        <option value="men-formal">Men - Formal</option>
+                        <option value="men-casual">Men - Casual</option>
+                        <option value="men-sandals">Men - Sandals</option>
+                        <option value="women-heels">Women - Heels</option>
+                        <option value="women-flats">Women - Flats</option>
+                        <option value="women-sneakers">Women - Sneakers</option>
+                    </select>
+                    <span asp-validation-for="Category" class="text-danger"></span>
+                </div>
+
+                <div class="col-md-4">
+                    <label asp-for="Sizes" class="form-label">Available Sizes</label>
+                    <input asp-for="Sizes" class="form-control" placeholder="e.g. 38, 39, 40" />
+                    <span asp-validation-for="Sizes" class="text-danger"></span>
+                </div>
+
+                <div class="col-md-4">
+                    <label asp-for="Stock" class="form-label">Stock</label>
+                    <input asp-for="Stock" type="number" min="0" class="form-control" placeholder="e.g. 10" />
+                    <span asp-validation-for="Stock" class="text-danger"></span>
+                </div>
+
+                <div class="col-md-4">
+                    <label asp-for="ImageUrl" class="form-label">Image URL</label>
+                    <input asp-for="ImageUrl" class="form-control" placeholder="https://example.com/image.jpg" />
+                    <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                </div>
+
+                <div class="col-12">
+                    <label asp-for="Description" class="form-label">Description</label>
+                    <textarea asp-for="Description" rows="3" class="form-control" placeholder="Short description of the shoe"></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-end mt-4">
+                <a asp-action="AdminIndex" asp-controller="Product" class="btn btn-outline-secondary me-2">Cancel</a>
+                <button type="submit" class="btn btn-dark">Save Product</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
