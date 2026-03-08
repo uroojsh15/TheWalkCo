@@ -1,0 +1,7 @@
+# Force GitHub to detect languages correctly
+wwwroot/lib/** linguist-vendored
+obj/** linguist-vendored
+*.cs linguist-language=C#
+*.html linguist-language=HTML
+*.css linguist-language=CSS
+*.js linguist-language=JavaScript
